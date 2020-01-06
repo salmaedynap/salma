@@ -8,34 +8,32 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-		 <script type="text/javascript">
-		 	 const hai = new hai();                                      
-		 </script>
+		 <script type="text/javascript" src="main.js"></script>
 
 		<!--NavBar-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="#">HelloBandung</a>
+			  <a class="navbar-brand" href="home.html">HelloBandung</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item active">
+			      <li class="nav-item ">
 			        <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
 			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">About</a>
+			      <li class="nav-item active">
+			        <a class="nav-link" href="about.html">About</a>
 			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contact Us</a>
+			      <li class="nav-item ">
+			        <a class="nav-link" href="contact.html">Contact Us</a>
 			      </li>
 			    </ul>
 			  </div>
 		</nav>
 
 
-			<!--MOdal Contact Us-->
+			<!--MOdal Contact Us
 				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
@@ -45,23 +43,13 @@
 				          <span aria-hidden="true">&times;</span>
 				        </button>
 				      </div>
+				      <!--
 				      <div class="modal-body">
-				        				<form>
-				        					<p>Jika ada pertanyaan , saran atau kritik silahkan isi form kami dibawah</p>
-										  <div class="form-group">
-										    <label for="exampleInputEmail1">Email</label>
-										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-										    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-										  </div>
-										  <div class="form-group">
-										    <label for="exampleInputPassword1">Masukan</label>
-										    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-										  </div>
-										</form>
+				        				
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary" onclick="satu()">Submit</button>
+				        <button type="button" class="btn btn-primary" onclick="tes()">Submit</button>
 				      </div>
 				    </div>
 				  </div>
@@ -218,7 +206,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Seblak</h5>
 		        <p id="seblak" class="card-text">ingin tahu lebih lanjut?</p>
-		        <button type="button" class="btn btn-info" onclick="hai.dua()" id="seblak">See more</button>
+		        <button type="button" class="btn btn-info" onclick="dua()" id="seblak">See more</button>
 		        <p class="card-text"><small class="text-muted">Recommended!</small></p>
 		      </div>
 		    </div>
@@ -234,7 +222,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Surabi</h5>
 		        <p id="surabi" class="card-text">ingin tahu lebih lanjut?</p>
-		        <button type="button" class="btn btn-info" onclick="hai.tiga()" id="surabi">See more</button>
+		        <button type="button" class="btn btn-info" onclick="tiga()" id="surabi">See more</button>
 		        <p class="card-text"><small class="text-muted">Recommended!</small></p>
 		      </div>
 		    </div>
@@ -250,7 +238,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Bandros</h5>
 		        <p id="bandros" class="card-text">ingin tahu lebih lanjut?</p>
-		        <button type="button" class="btn btn-info" onclick="hai()" id="bandros">See more</button>
+		        <button type="button" class="btn btn-info" onclick="empat()" id="bandros">See more</button>
 		        <p class="card-text"><small class="text-muted">Recommended!</small></p>
 		      </div>
 		    </div>
@@ -266,7 +254,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Cuanki</h5>
 		        <p id="cuanki" class="card-text">ingin tahu lebih lanjut?</p>
-		        <button type="button" class="btn btn-info" onclick="hai()" id="cuanki">See more</button>
+		        <button type="button" class="btn btn-info" onclick="lima()" id="cuanki">See more</button>
 		        <p class="card-text"><small class="text-muted">Recommended!</small></p>
 		      </div>
 		    </div>
@@ -274,11 +262,11 @@
 		</div>
 		</div>
 		<p>Select dan click button for change theme color</p>
-			<button onclick="warna(1)" class="btn btn-outline-dark">Salmon</button>
-			<button onclick="warna(2)" class="btn btn-outline-dark">Mint</button>
-			<button onclick="warna(3)" class="btn btn-outline-dark">Thistle</button>
-			<button onclick="warna(4)" class="btn btn-outline-dark">Beige</button>
-			<button onclick="warna(5)" class="btn btn-outline-dark">Normal</button>
+			<button onclick="warna(1)" class="btn btn-outline-dark"">Salmon</button>
+			<button onclick="warna(2)" class="btn btn-outline-dark"">Mint</button>
+			<button onclick="warna(3)" class="btn btn-outline-dark"">Thistle</button>
+			<button onclick="warna(4)" class="btn btn-outline-dark"">Beige</button>
+			<button onclick="warna(5)" class="btn btn-outline-dark"">Normal</button>
 			<br><br>
 		</center>
 
